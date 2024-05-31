@@ -45,7 +45,7 @@ namespace Game_Unit_test
                 else
                 {
                 }
-            } while (rounds < 5);
+            } while (rounds < 10);
             board.scores(team1, team2);
         }
     }

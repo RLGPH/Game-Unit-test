@@ -8,7 +8,7 @@ namespace Game_Unit_test
 {
     public class ScoreBoard
     {
-
+        //desplayed ui
         public void scores(Team team1, Team team2)
         {
             Console.WriteLine($"{team1.TeamN} VS {team2.TeamN}\n" +

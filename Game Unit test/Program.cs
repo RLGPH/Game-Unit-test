@@ -16,6 +16,7 @@
         {
             Battle battle = new Battle();
             Console.WriteLine("Press \"Enter to run or escape to close\"");
+            //used to select what to do
             ConsoleKeyInfo keyInfo = Console.ReadKey();
             if (keyInfo.Key == ConsoleKey.Enter)
             {
@@ -32,7 +33,8 @@
             }
             else
             {
-                Console.WriteLine("");
+                Console.WriteLine(":oh you pressed anything but what you were asked to" +
+                    " good for you a real rull breaker");
 
                 battle.Matches(teams[0], teams[1]);
 

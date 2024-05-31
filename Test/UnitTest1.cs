@@ -6,6 +6,7 @@ namespace Tests
     public class Test
     {
         Battle battle = new();
+        //tests if its able to do a "battle"
         [Fact]
         public void BattleTest()
         {
@@ -14,7 +15,6 @@ namespace Tests
 
             battle.Matches(team1, team2);
 
-            // Check if the TeamWin property of each team is updated correctly
             Assert.True(team1.TeamWin >= 0 && team1.TeamWin <= 5, "Team 1 win count is out of range.");
             Assert.True(team2.TeamWin >= 0 && team2.TeamWin <= 5, "Team 2 win count is out of range.");
         }
